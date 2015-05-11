@@ -1,0 +1,96 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.Sherlock.Light.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- Used in setting_content_frame.xml -->
+    <style name="setting_menu_text_style" parent="@android:style/TextAppearance.Medium">
+        <!-- Copy of simple_list_item_1 style from android. -->
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceListItemSmall</item>
+        <item name="android:minHeight">?android:attr/listPreferredItemHeightSmall</item>        
+    </style>
+
+   <!-- Used in setting_content_frame.xml to represent right arrow -->
+    <style name="setting_menu_image_style" >
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    
+    <!-- Used in setting_content_frame.xml to represent right arrow -->
+    <style name="android:layout_width" >
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    
+    <!-- Used in setting_content_frame.xml, a setting item's layout. -->
+    <style name="setting_menu_item_layout" >
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="setting_menu_button_layout" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <!-- Used in setting_menu_weather.xml, representing listView's title's style  -->
+    <style name="setting_menu_list_title_style" >
+         <item name="android:textSize">18sp</item>
+         <item name="android:layout_marginLeft">3dp</item>
+         <item name="android:layout_marginTop">3dp</item>
+         <item name="android:layout_width">match_parent</item>
+         <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <!-- Used in setting_menu_weather.xml, representing listView's style  -->
+    <style name="setting_menu_listview_style">
+        <item name="android:divider">#CCCCCC</item>
+        <item name="android:dividerHeight">2dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    
+    <!-- Used in listview's item -->
+    <style name="setting_menu_listview_item_style" parent="@android:style/TextAppearance.Medium">
+        <!-- Copy of simple_list_item_1 style from android. -->
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceListItemSmall</item>
+        <item name="android:minHeight">?android:attr/listPreferredItemHeightSmall</item>        
+    </style>
+    <style name="setting_checkbox_style" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:gravity="bottom" >
+
+    <LinearLayout
+        android:id="@+id/searchcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navibar_button_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/whiteborder" >
+
+        <ImageView
+            android:id="@+id/zoomflag"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:src="@drawable/search" />
+
+        <AutoCompleteTextView
+            android:id="@+id/keyWord"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.04"
+            android:background="@color/white"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:hint="输入目的地"
+            android:imeOptions="actionDone"
+            android:inputType="text|textAutoComplete"
+            android:maxLength="25"
+            android:textColor="#000000" >
+        </AutoCompleteTextView>
+
+        <Button
+            android:id="@+id/searchKsButton"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="搜索" />
+    </LinearLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/searchcontainer" >
+  
+    </com.amap.api.maps.MapView>
+
+    <LinearLayout
+        android:id="@+id/navibarcontainer"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/navibar_margin_method"
+        android:background="@drawable/whiteupborder" >
+
+        <ImageView
+            android:id="@+id/naviflag"
+            android:layout_width="25sp"
+            android:layout_height="21dp"
+            android:layout_gravity="center"
+            android:src="@drawable/naviflag" />
+
+        <Button
+            android:id="@+id/navi_route_button"
+            android:layout_width="43dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="0sp"
+            android:layout_toRightOf="@+id/naviflag"
+            android:background="@color/white"
+            android:text="@string/start_navi_navi" />
+ 	    <ImageView
+            android:id="@+id/aroundflag_blanck"
+            android:layout_width="35sp"
+            android:layout_height="fill_parent"    />
+ 	    
+        <ImageView
+            android:id="@+id/aroundflag"
+            android:layout_width="25sp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/aroundSearchButton"
+            android:src="@drawable/aroundflag" />
+
+        <Button
+            android:id="@+id/aroundSearchButton"
+            android:layout_width="43dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:text="@string/around_search" />
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/navibarsetting"
+       android:layout_width="30dp"
+       android:layout_height="35dp"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_marginBottom="@dimen/navibar_margin_method"
+       android:background="@color/grey" >
+     
+       <ImageView
+           android:id="@+id/strategysetting"
+           android:layout_width="wrap_content"
+           android:layout_height="fill_parent"
+           android:src="@drawable/navisetting" />
+       
+    </LinearLayout>       
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@color/grey"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/setting_back_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="设置"
+            android:textColor="@color/black"
+            android:textSize="@dimen/titletext_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whiteborder"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/navisetting"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/speedfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="速度最快"
+                android:textColor="@color/black" >
+            </RadioButton>
+
+
+            <RadioButton
+                android:id="@+id/feeless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="避免收费"
+                android:textColor="@color/black" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/distanceshort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="距离最短"
+                android:textColor="@color/black" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/nohighway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="不走高速"
+                android:textColor="@color/black" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/trafficbetter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10216415232.00"
+                android:checked="false"
+                android:text="躲避拥堵"
+                android:textColor="@color/black" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/no_highway_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="不走高速且避免收费"
+                android:textColor="@color/black" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/no_highway_traffic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="不走高速且躲避拥堵"
+                android:textColor="@color/black" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/no_fee_traffic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="不走高速且躲避拥堵"
+                android:textColor="@color/black" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/no_highway_fee_traffic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="不走高速且躲避收费和拥堵"
+                android:textColor="@color/black" >
+            </RadioButton>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/setting_margin_bottom"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/sendnavisetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="发送"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="main_control_items">
+        <item>控制台</item>
+        <item>设置</item>
+        <item>微信</item>
+        <item>地图</item>
+        <item>微博</item>
+        <item>帮助</item>
+    </string-array>
+    
+    <string-array name="setting_menu_items">
+        <item>天气</item>
+        <item>股票</item>
+        <item>消息</item>
+    </string-array>
+</resources>

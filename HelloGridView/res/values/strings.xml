@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">车载显示</string>
+    
+    <string name="global_back">后退</string>
+
+    <string name="main_menu_messaging">短信</string>
+    <string name="main_menu_phone">电话</string>
+    <string name="main_menu_map">地图</string>
+    <string name="main_menu_settings">设置</string>
+    <string name="main_menu_weibo">微博</string>
+    <string name="main_menu_help">帮助</string>
+    <string name="viponly">仅对VIP开放！</string>
+    
+    <string name="loading">载入中...</string>
+
+    <string name="globalsettingserializablename">GlobalSetting</string>
+    
+    <string name="setting_menu_messaging">短信</string>
+    <string name="setting_menu_weather">天气</string>
+    <string name="setting_menu_stock">股票</string>
+    
+    <string name="baidu_api_key">889c9b331927a095810c660c4c7058ea</string>
+    
+    <string name="stock_name">股票名称</string>
+    <string name="stock_current_price">当前价格</string>
+    <string name="stock_today_highest_price">今日高价</string>
+    <string name="stock_today_lowest_price">今日低价</string>
+    <string name="stock_today_open_price">今日开盘价</string>
+    <string name="stock_last_close_price">上次收盘价</string>
+    <string name="stock_current_buy_price">当前买价</string>
+    <string name="stock_current_sell_price">当前卖价</string>
+    <string name="stock_current_volume">今日成交量</string>
+
+    
+    <string name="weibo_auth">WEB 授权</string>
+    <string name="weibo_logout_failed">注销失败</string>
+    <string name="weibo_logout_success">已注销</string>
+    <string name="weibo_toast_auth_canceled">取消授权</string>
+    <string name="weibo_toast_auth_success">授权成功</string>
+    <string name="weibo_toast_auth_failed">授权失败</string>
+    <string name="weibo_token_to_string_format_1">Token: %1$s\n 有效期: %2$s</string>
+    <string name="weibo_token_has_existed">Token仍在有效期内，无需再次登录</string>
+    <string name="weibosdk_access_token_is_empty">Access Token不存在,请先登录</string>
+    <string name="weibo_token_info">TODO</string>
+ 
+    
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="navibar_title">路径规划</string>
+    <string name="navi_car">驾车</string>
+    <string name="navi_foot">步行</string>
+    <string name="navi_start">"起    点"</string>
+    <string name="navi_middle">途经点</string>
+    <string name="navi_end">"终    点"</string>
+    <string name="navi_strategy">"策    略"</string>
+    <string name="navi_route">路径规划</string>
+    <string name="navi_navi">模拟导航</string>
+    <string name="start_navi_navi">导航</string>
+    <string name="navi_strategy_speed">速度最快</string>
+    <string name="navi_strategy_cost">避免收费</string>
+    <string name="navi_strategy_distance">距离最短</string>
+    <string name="navi_strategy_nohighway">不走高速快速路</string>
+    <string name="navi_strategy_timenojam">时间最短且躲避拥堵</string>
+    <string name="navi_strategy_costnojam">避免收费且躲避拥堵</string>
+    
+    <string name="theme_blue">经典蓝</string>
+    <string name="theme_pink">可爱粉</string>
+    <string name="theme_white">简约白</string>
+    
+    <string name="setting">设置</string>
+    <string name="day">白天</string>
+    <string name="night">夜间</string>
+    <string name="yes">"  是  "</string>
+    <string name="no">"  否  "</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="daynightmode">"昼夜模式    "</string>                                                                                  
+    <string name="deviationrecalculation">"偏航重算    "</string>
+    <string name="jamrecalculation">"拥堵重算    "</string>
+    <string name="trafficbroadcast">"交通播报    "</string>
+    <string name="camerabroadcast">摄像头播报</string>
+    <string name="screenon">"屏幕常亮    "</string>
+    <string name="routeshow">线路展示</string>
+    <string name="tapmap">点击地图设置</string>
+    <string name="starttapmap">我的位置（可点击地图设置）</string>
+    <string name="walkdescription">步行状态不可用</string>
+    <string name="routeinfo">全程   --公里/--分钟    收费 --元</string>
+     <string name="routeinfo_1">全程 </string>
+      <string name="routeinfo_2">公里/</string>
+       <string name="routeinfo_3">"分钟    收费"</string>
+       <string name="routeinfo_4">元</string>
+       <string name="routeinfo_default">--</string>
+    <string name="app_id">输入您讯飞的appid</string>
+    <string name="mypoistion">我的位置</string>
+    <string name="mappoistion">地图点选</string>
+    <string name="positioninfo">位置信息</string>
+
+    <string-array name="preference_values_tts_role">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>vixy</item>
+        <item>vixq</item>
+        <item>vixf</item>
+        <item>vixm</item>
+        <item>vixl</item>
+        <item>vixr</item>
+        <item>vixyun</item>
+        <item>vixk</item>
+        <item>vixqa</item>
+        <item>vixying</item>
+        <item>vixx</item>
+        <item>vinn</item>
+        <item>vils</item>
+    </string-array>
+
+    <string name="preference_default_tts_role">xiaoyan</string>
+    <string name="preference_key_tts_speed">tts_speed</string>
+    <string name="preference_title_tts_speed">语速</string>
+    <string name="preference_default_tts_speed">50</string>
+    <string name="preference_dialog_title_tts_speed">选择语速</string>
+    <string name="preference_key_tts_volume">tts_volume</string>
+    <string name="preference_title_tts_volume">音量</string>
+    <string name="preference_default_tts_volume">50</string>
+    <string name="preference_dialog_title_tts_volume">选择音量</string>
+    <string name="preference_key_tts_pitch">tts_pitch</string>
+    <string name="preference_title_tts_pitch">语调</string>
+    <string name="preference_default_tts_pitch">50</string>
+   
+    <!-- offlinemap -->   
+    <string name="error_network">搜索失败,请检查网络连接！</string>
+    <string name="error_key">key验证无效！</string>
+    <string name="error_other">未知错误，请稍后重试!错误码为</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="around_search">周边搜索</string>
+    <string name="poiaroundsearch">周边搜索</string>
+    
+    <string name="message_new">新消息</string>
+    <string name="message_from">发件人</string>
+    <string name="message_received_at">接收于</string>
+    
+    <string name="call_from">新电话来自</string>
+
+    
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    android:background="#CCFFCE"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!-- android:visibility="invisible" -->
+            <View
+                android:id="@+id/flipcard_weather_item_top_center_split_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_toLeftOf="@id/flipcard_weather_item_top_center_split_view">
+
+                <TextView
+	                android:id="@+id/flipcard_weather_item_city_name"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/flipcard_weather_item_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/flipcard_weather_item_realtime_temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp" />
+                
+		        <TextView
+	                android:id="@+id/flipcard_weather_item_current_pm25"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:textSize="18sp" />
+	
+	            <TextView
+	                android:id="@+id/flipcard_weather_item_current_wind"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_toRightOf="@id/flipcard_weather_item_top_center_split_view">
+	            <ImageView
+	                android:id="@+id/flipcard_weather_item_weatherpic"
+	                android:layout_width="100dp"
+	                android:layout_height="100dp"/>
+
+	            <TextView
+	                android:id="@+id/flipcard_weather_item_current_weather"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:textSize="25sp" />
+
+	            <TextView
+	                android:id="@+id/flipcard_weather_item_current_temp"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:textSize="18sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!-- Use flipcard_weather_item_left_panel_item_layout.xml to fill this listView -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+	        <GridView
+	            android:id="@+id/flipcard_weather_item_left_forecast_item"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:numColumns="4"
+	            android:orientation="horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <!-- Use flipcard_weather_item_right_panel_item_layout.xml to fill this listView -->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flipcard_weather_item_right_panel_item"
+        android:gravity="center"
+        android:layout_weight="7"
+        android:orientation="vertical" />
+</LinearLayout>

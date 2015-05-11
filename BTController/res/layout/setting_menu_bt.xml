@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView 
+            style="@style/setting_menu_text_style"
+            android:text="@string/setting_menu_bt_display_status"
+            android:layout_alignParentLeft="true"/>
+        
+        <!-- Use the general setting_menu_text_style but with override. -->
+        <TextView
+            style="@style/setting_menu_text_style"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="@string/setting_menu_bt_display_status_disconnected"
+            android:layout_alignParentRight="true"
+            android:id="@+id/setting_menu_bt_display_status_text" />
+        
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/setting_menu_text_style"
+            android:text="@string/setting_menu_bt_display_name"
+            android:layout_alignParentLeft="true" />
+        <TextView
+            style="@style/setting_menu_text_style"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/setting_menu_bt_display_name_text" /> 
+    
+    </RelativeLayout>
+    <TextView
+        style="@style/setting_menu_text_style" 
+        android:text="@string/setting_menu_bt_paired_devices"/>
+    <ListView 
+        style="@style/setting_menu_listview_style"
+        android:id="@+id/setting_menu_bt_device_list">
+    </ListView>
+</LinearLayout>

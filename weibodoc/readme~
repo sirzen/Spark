@@ -1,0 +1,5 @@
+
+使用weibo的两种方式：
+1. 采用用bin目录下的已生成的hellogridview.apk直接安装，可以访问weibo。
+
+2. 如果重新编译项目后安装，属于重新生成应用，需要在本机上重新生成签名，见文档微博Android平台SDK文档V2.5.0.pdf 8.1节。签名软件为app_signatures.apk。并且需要在open.weibo.com上注册你的应用，获取appkey，填写签名和Redirect URL。

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- The setting_content_frame is the frame describing top-level setting
+     menu. It may have checkboxes, texts pointing to sub-level setting menus,
+     scroll bars, etc. Currently, this is not set, and we use settings_checkbox
+     to debug bluetooth communication, but in future need to switch to this 
+     layout file. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">"
+    <RelativeLayout
+        style="@style/setting_menu_item_layout">
+        <CheckBox android:id="@+id/setting_checkbox_weather"
+	    	style="@style/setting_checkbox_style"
+	        android:onClick="onCheckboxClicked"/>
+	    <TextView
+            android:id="@+id/setting_menu_text_weather"
+            style="@style/setting_menu_text_style"
+            android:layout_toRightOf="@+id/setting_checkbox_weather"
+            android:text="@string/setting_menu_weather"/>
+        <ImageView
+            style="@style/setting_menu_image_style"
+            android:src="@drawable/right_arrow"/>
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/setting_menu_item_layout">
+        <CheckBox android:id="@+id/setting_checkbox_stock"
+	        style="@style/setting_checkbox_style"   
+	        android:onClick="onCheckboxClicked"/>
+        <TextView
+            android:id="@+id/setting_menu_text_stock"
+            style="@style/setting_menu_text_style"
+            android:layout_toRightOf="@+id/setting_checkbox_stock"
+            android:text="@string/setting_menu_stock"/>
+        <ImageView
+            style="@style/setting_menu_image_style"
+            android:src="@drawable/right_arrow"/>
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/setting_menu_item_layout">
+        <CheckBox android:id="@+id/setting_checkbox_messaging"
+       		style="@style/setting_checkbox_style"
+        	android:onClick="onCheckboxClicked"/>                
+        <TextView
+            android:id="@+id/setting_menu_text_messaging"
+            style="@style/setting_menu_text_style"
+            android:layout_toRightOf="@+id/setting_checkbox_messaging"
+            android:text="@string/setting_menu_messaging"/>
+        <ImageView
+            style="@style/setting_menu_image_style"
+            android:src="@drawable/right_arrow"/>
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/setting_menu_item_layout">
+        <CheckBox android:id="@+id/setting_checkbox_weibo"
+        style="@style/setting_checkbox_style"
+        android:onClick="onCheckboxClicked"/>
+        <TextView
+            android:id="@+id/setting_menu_text_weibo"
+            style="@style/setting_menu_text_style"
+            android:layout_toRightOf="@+id/setting_checkbox_weibo"
+            android:text="@string/setting_menu_weibo"/>
+        <ImageView
+            style="@style/setting_menu_image_style"
+            android:src="@drawable/right_arrow"/>
+    </RelativeLayout>
+        <RelativeLayout
+        style="@style/setting_menu_item_layout">
+        <CheckBox android:id="@+id/setting_checkbox_bt"
+	        style="@style/setting_checkbox_style"
+    	    android:visibility="invisible"
+        	android:onClick="onCheckboxClicked"/>
+        <TextView
+            android:id="@+id/setting_menu_text_bluetooth"
+            style="@style/setting_menu_text_style"
+			android:layout_toRightOf="@+id/setting_checkbox_bt"
+            android:text="@string/setting_menu_bluetooth"/>
+        <ImageView
+            style="@style/setting_menu_image_style"
+            android:src="@drawable/right_arrow"/>
+    </RelativeLayout>
+</LinearLayout>

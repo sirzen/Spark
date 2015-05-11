@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The Menu Frame is used to describe leftmost top leve menu.
+     MenuFrame is adjacent to setting_content_frame and other
+     top-level contents. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
