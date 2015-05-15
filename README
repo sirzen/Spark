@@ -1,6 +1,6 @@
 Hello. Welcome to the Spark project.
 
-INTRODUCTION
+=== INTRODUCTION ===
 
 Spark is designed to be a lightweight secondary screen used in your car. It is based on Android, sa any of your old cellphone could be turned into a secondary screen to display useful messages for you while you are driving.
 
@@ -8,39 +8,39 @@ Spark has two parts: The HelloGridView.apk and the BTController.apk. The HelloGr
 
 Unlike Google's Android Auto or Apple's CarPlay, Spark is designed to be simple and lightweight, yet flexible enough to expand to have more features. For the current features and how to expand new features, see the FUNCTIONALITY section below.
 
-INFRASTRUCTURE
+=== INFRASTRUCTURE ===
 
-* Message Passing through Bluetooth
+** Message Passing through Bluetooth **
 The BTController.apk and HelloGridView.apk communicates using Bluetooth. Therefore, you need to install both apks on phones/tablets with Bluetooth support. Pair two devices with Bluetooth, and start the apk. The BTController.apk will ask you to add a device, so select the device that installs the HelloGridView.apk.
 
 An infrastructure is implemented to pass serializable objects between the two apps. If you need to add new customized messages, simply re-use the same code.
 
-* Message Management
+** Message Management **
 Overtime the secondary screen will get a couple of messages to display. An infrastructure to manage these messages is also developed. There is a content pool and a display pool. The content pool will store all available messages received from BTController, and removes these no longer needed. The display pool will maintain messages to be displayed, and once elements inside display pool is below certain threshold, display pool will query content pool for more items to display.
 
 A High priority mode is also supported, given the content pool / display pool management will have delay due to asynchronous polling. Once a message is inserted to content pool with a high priority, content pool will request display pool to *instantly* generate the display fragment for this message and push it out to display. This is very useful for implementing a phone call message, and it turns out very responsive in our test when phone is coming in.
 
 For where the code is, please refer to PROJECT FILES section for more detail.
 
-FUNCTIONALITY
-* Working:
-** Calls and Messages:
+=== FUNCTIONALITY ===
+** Working **
+* Calls and Messages:
 Spark could now pushes your calls and new messages got while BTController is running. Calls will be displayed instantly on the secondary screen with numbers and contact name if available. Messages will be displayed, too. If multiple messages are coming, they will be displayed alternatively.
 
-** Weather:
+* Weather
 You can configure on the BTController to display city's weather info on the secondary screen. The weather includes info for a basic weather report, for example next 4 days' temperature, weather, wind. It also includes some recommendation for your day, like wearing index, outdoor index etc.
 
-* Experimental:
-** Weibo:
+** Experimental **
+* Weibo:
 You can configure a Weibo account in the BTController, and latest Weibo updates will be pushed on to the secondary screen. Weibos with pictures will also be supported. This feature is not fully tested and is not guaranteed to work every time.
 
-FUTURE WORK
+=== FUTURE WORK ===
 
 Given we have the Message passing and Message management infrastructure in place, it should be easy to add new features in this project. All you need to do is to generate the content on BTController.apk, pass the content to HelloGridView.apk, and specify how to display this content. You may optionally specify how this content needs to be displayed i.e. remove after showing several times, or display with a high priority.
 
 I currently do not have much time in maintaining this project so I don't expect any new features being released in next several months.
 
-PROJECT FILES
+=== PROJECT FILES ===
 
 External Libraries: The actionbarsherlock, SlidingMenuLibrary and WeiboSDK are external libraries. actionbarsherlock is Jake Wharton's actionbarsherlock (https://github.com/JakeWharton/ActionBarSherlock). SlidingMenuLibrary is Jeremy Feins0tein's SlidingMenu (https://github.com/jfeinstein10/SlidingMenu). WeiboSDK is the SDK released by Sina (www.sina.com) for Weibo functionality.
 
@@ -59,7 +59,7 @@ Resources: PNG files used in project.
 weibodoc: Documentation for how to use WeiboSDK.
 
 
-LICENSE
+=== LICENSE ===
 Copyright 2015 Chengchen Sun
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -74,7 +74,7 @@ distributed under the License is distributed on an "AS IS" BASIS,
             See the License for the specific language governing permissions and
             limitations under the License.
 
-ACKNOWLEDGEMENT
+=== ACKNOWLEDGEMENT ===
 Thanks to Yanhong Liu who developed the Weibo/Map part of this project.
 
 Thanks to Jake Wharton who provided the actionbarSherlock library:
